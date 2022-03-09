@@ -1,0 +1,207 @@
+*, *::after, *::before {
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 400px) {
+	body {
+		width: 100%;
+		height: 100%;
+		.project-container {
+			width: 100%;
+			height: 100%;
+			.header-container {
+				width: 100%;
+				height: 10%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: rgba(38, 50, 56, 1);
+				.logo-img {
+					width: 192px;
+					height: 51px;
+				}
+			}
+			.body-container {
+				width: 100%;
+				height: 100%;
+				background-color: rgba(72, 101, 116, 1);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.wider-screen-pokemon-name {
+				display: none;
+				}
+				.image-container {
+					border-radius: 36px;
+					margin-top: 18px;
+					width: 300px;
+					height: 300px;
+					background-color: rgba(192, 225, 255, 0.36);
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					.pokemon-image {
+					width: 100%;
+					height: 100%;
+					}
+				}
+				.info-container {
+					margin-top: 18px;
+					width: 300px;
+					height: 270px;
+					background-color: rgba(62, 116, 142, 1);
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					flex-direction: column;
+					border-radius: 10px;
+					text-align: center;
+					h3 {
+						font-family: 'Reem Kufi', sans-serif;
+						font-style: normal;
+						font-weight: bold;
+						font-size: 20px;
+						color: #FFE600;
+						letter-spacing: 1px;
+					}
+					.poke-info-div {
+						margin-bottom: 12px;
+					}
+					span {
+						color: white;
+						font-weight: bold;
+						letter-spacing: 1px;
+					}
+				}
+				.button {
+					width: 218px;
+					height: 33px;
+					margin: 10px 0px 10px 0px;
+					background: #509ABF;
+					border-radius: 10px;
+					font-family: 'Reem Kufi', sans-serif;
+					font-style: normal;
+					color: white;
+					font-weight: 700;
+					font-size: 18px;
+					letter-spacing: 1px;
+				}
+			}
+		}
+	}
+}
+
+/*
+.wider-screen-pokemon-name {
+					color: white;
+					font-weight: bold;
+					letter-spacing: 1px;
+				}
+*/
+
+@media screen and (min-width: 401px) {
+	body {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		align-items: center;
+		#root {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.project-container {
+				width: 450px;
+				height: 100%;
+				.header-container {
+					width: 100%;
+					height: 10%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					background-color: rgba(38, 50, 56, 1);
+					.logo-img {
+						width: 192px;
+						height: 51px;
+					}
+				}
+				.body-container {
+				width: 100%;
+				height: 100%;
+				background-color: rgba(72, 101, 116, 1);
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+					.wider-screen-pokemon-name {
+						color: white;
+						font-weight: bold;
+						letter-spacing: 1px;
+						font-size: 24px;
+						margin-top: 10px;
+					}
+					.image-container {
+					border-radius: 36px;
+					margin-top: 10px;
+					width: 340px;
+					height: 340px;
+					background-color: rgba(192, 225, 255, 0.36);
+					display: flex;
+					justify-content: center;
+					align-items: center;
+						.pokemon-image {
+						width: 100%;
+						height: 100%;
+						}
+					}
+					.info-container {
+						margin-top: 10px;
+						width: 300px;
+						height: 230px;
+						background-color: rgba(62, 116, 142, 1);
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						flex-direction: column;
+						border-radius: 10px;
+						text-align: center;
+						.narrow-screen-pokemon-h3, .narrow-screen-pokemon-name {
+							display: none;
+						}
+						h3 {
+							font-family: 'Reem Kufi', sans-serif;
+							font-style: normal;
+							font-weight: bold;
+							font-size: 20px;
+							color: #FFE600;
+							letter-spacing: 1px;
+						}
+						.poke-info-div {
+							margin-bottom: 15px;
+						}
+						span {
+							color: white;
+							font-weight: bold;
+							letter-spacing: 1px;
+							font-size: 18px;
+						}
+					}
+					.button {
+						width: 218px;
+						height: 33px;
+						margin: 10px 0px 10px 0px;
+						background: #509ABF;
+						border-radius: 10px;
+						font-family: 'Reem Kufi', sans-serif;
+						font-style: normal;
+						color: white;
+						font-weight: 700;
+						font-size: 18px;
+						letter-spacing: 1px;
+					}
+				}
+			}
+		}
+	}
+}
